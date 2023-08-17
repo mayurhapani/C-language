@@ -4,33 +4,35 @@
 
 int main()
 {
-    int n, n1, count = 0, sum = 0, end;
+    int n, n1, aaa, rem, count = 0, sum = 0, end = 10000;
 
-    printf("enter last velue (lower then 10000) :");
-    scanf("%d", &end);
+    // printf("enter last velue (lower then 10000) :");
+    // scanf("%d", &end);
 
     for (n = 1; n <= end; n++)
     {
         n1 = n;
-
-        while (n != 0)
+        while (n1 != 0)
         {
-            n /= 10;
+            n1 /= 10;
             count++;
         }
-        n = n1;
 
-        while (n != 0)
+        n1 = n;
+
+        while (n1 != 0)
         {
-            n %= 10;
-            sum += pow(n, count);
-            n /= 10;
+            rem = n1 % 10;
+            sum += pow(rem, count);
+            n1 /= 10;
         }
 
-        if (sum == n1)
+        if (sum == n)
         {
-            printf("%d ,", n1);
+            printf("%d ,\n", n);
         }
+        count = 0;
+        sum = 0;
     }
 
     return 0;
