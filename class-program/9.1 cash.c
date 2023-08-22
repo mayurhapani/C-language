@@ -3,15 +3,16 @@
 
 int main()
 {
-    int ch, a, b;
+    char ch;
+    int a, b;
 
     printf("'1' for addition :\n '2' for substraction :\n '3' for multiplication :\n ");
     printf("please select any option : \n");
 start:
-    ch = 0;
-    scanf("%d", &ch);
 
-    if (ch >= 1 && ch <= 3)
+    scanf("%c", &ch);
+
+    if (ch >= '1' && ch <= '3')
     {
         printf("enter first value :");
         scanf("%d", &a);
@@ -21,22 +22,18 @@ start:
     else
     {
         printf("enter valid value !\n");
-        if (ch == 0)
-        {
-            scanf("%c");
-        }
         goto start;
     }
 
     switch (ch)
     {
-    case 1:
+    case '1':
         printf("%d + %d = %d", a, b, (a + b));
         break;
-    case 2:
+    case 50: // '2'
         printf("%d - %d = %d", a, b, (a - b));
         break;
-    case 3:
+    case '3':
         printf("%d x %d = %d", a, b, (a * b));
         break;
     default:
