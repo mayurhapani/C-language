@@ -1,15 +1,23 @@
 #include <stdio.h>
 #include <conio.h>
-
+#include <string.h>
 int main()
 {
-    int ch = 0, a, b;
+    char ch, s[50], x[50];
 
-    // printf("'1' for addition :\n '2' for substraction :\n '3' for multiplication :\n ");
-    printf("%d \n", ch);
-    printf("please select any option : \n");
-    scanf("%d", &ch);
-    printf("%d", ch);
+    printf("1 :");
+    scanf("%c", &ch); // a
+
+    printf("2 :");
+    scanf("%s", &s); // bbb
+
+    fflush(stdin);
+    printf("3 :");
+    scanf("%[^\n]s", x);
+
+    printf("%c", ch);
+    printf("\n%s\n", s);
+    puts(x);
 
     return 0;
 }

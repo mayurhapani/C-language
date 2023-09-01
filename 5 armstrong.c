@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <math.h>
 
 int main()
@@ -22,9 +21,11 @@ int main()
     while (n1 != 0)
     {
         rem = n1 % 10;
-        printf("%d \n", rem);
-        aaa = pow(rem, count);
-        printf("%d \n", aaa);
+        aaa = 1;
+        for (int i = 0; i < count; i++)
+        {
+            aaa = aaa * rem;
+        }
         sum += aaa;
         printf("rem=%d sum=%d\n", rem, sum);
         // sum = sum + (rem * rem * rem);

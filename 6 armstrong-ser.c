@@ -23,7 +23,12 @@ int main()
         while (n1 != 0)
         {
             rem = n1 % 10;
-            sum += pow(rem, count);
+            aaa = 1;
+            for (int i = 0; i < count; i++)
+            {
+                aaa *= rem;
+            }
+            sum += aaa;
             n1 /= 10;
         }
 
