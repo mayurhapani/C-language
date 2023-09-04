@@ -37,7 +37,7 @@ int main()
 
     // revers 1
     printf("revers 1 = ");
-    for (i = count; i >= 0; i--)
+    for (i = count - 1; i >= 0; i--)
     {
         printf("%c", m[i]);
     }
