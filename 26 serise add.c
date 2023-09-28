@@ -1,28 +1,26 @@
 #include <stdio.h>
 #include <conio.h>
 
-int fact(int x)
+int addseri(int x)
 {
-    // printf("%d", x);
     static int ans = 1;
-
     if (x > 1)
     {
-        ans = x * fact(x - 1);
+        ans = x + addseri(x - 1);
     }
+
     return ans;
-    // printf("%d", ans);
 }
 
 int main()
 {
     int x;
-    printf("enter lanth :");
+    printf("enter last num :");
     scanf("%d", &x);
 
-    int a = fact(x);
+    int ans = addseri(x);
 
-    printf("%d", a);
+    printf("total of serise is : %d", ans);
 
     return 0;
 }
