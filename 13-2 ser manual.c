@@ -18,7 +18,7 @@ int main()
     // in capital
     for (i = 0; i < count; i++)
     {
-        if (m[i] > 'a' && m[i] < 'z')
+        if (m[i] >= 'a' && m[i] <= 'z')
         {
             m[i] -= 32;
         }
@@ -28,7 +28,7 @@ int main()
     // for small letter
     for (i = 0; i < count; i++)
     {
-        if (m[i] > 'A' && m[i] < 'Z')
+        if (m[i] >= 'A' && m[i] <= 'Z')
         {
             m[i] += 32;
         }

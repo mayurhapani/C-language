@@ -1,5 +1,8 @@
 {
   "files.associations": {
-    "RADIX.C": "cpp"
+    "RADIX.C": "cpp",
+    "2.C": "cpp",
+    "stdio.h": "c",
+    "3.C": "cpp"
   }
 }
