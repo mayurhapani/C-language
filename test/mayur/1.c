@@ -4,7 +4,7 @@
 int main()
 {
     int a[SIZE];
-    int pos = 0, neg = 0, zero = 0;
+    int posi = 0, nega = 0, zero = 0;
 
     printf("Enter 10 integer elements:\n");
     for (int i = 0; i < SIZE; i++)
@@ -16,11 +16,11 @@ int main()
     {
         if (a[i] > 0)
         {
-            pos++;
+            posi++;
         }
         else if (a[i] < 0)
         {
-            neg++;
+            nega++;
         }
         else
         {
@@ -28,8 +28,8 @@ int main()
         }
     }
 
-    printf("Total positive numbers: %d\n", pos);
-    printf("Total negative numbers: %d\n", neg);
+    printf("Total positive numbers: %d\n", posi);
+    printf("Total negative numbers: %d\n", nega);
     printf("Total zeros: %d\n", zero);
 
     return 0;
